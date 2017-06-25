@@ -50,10 +50,18 @@ function stopwatchStop (event) {
 function stopwatchLap (event) {
 event.preventDefault()
 console.log('Lap added!')
-lap.push(intervalId)
+laps.push(intervalId)
 
 }
 
+function stopwatchReset (event)
+
+{
+event.preventDefault()
+console.log('Reset!')
+rawTime = 0
+
+}
 
 
 
@@ -72,3 +80,5 @@ start.addEventListener("click", stopwatchStart)
 stop.addEventListener("click", stopwatchStop)
 
 lap.addEventListener("click", stopwatchLap)
+
+reset.addEventListener("click", stopwatchReset)

@@ -50,7 +50,7 @@ function stopwatchStop (event) {
 function stopwatchLap (event) {
 event.preventDefault()
 console.log('Lap added!')
-laps.push(intervalId)
+laps.push(rawTime)
 
 }
 
